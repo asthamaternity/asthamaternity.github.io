@@ -4,14 +4,42 @@
 
 <head>
 <title>Astha Maternity and Nursing Home</title>
-<meta http-equiv='refresh' content='5; URL=https://asthamaternity.github.io/homepage.html'>
 </head>
 
 <body>
+    <p>Your time is precious for us
+        Please wait until we check your browser 🙂
+    </p>
+    <h3>
+  You are being redirected to the appropriate page in <span id="countdown">10</span> seconds
+</h3>
+<!-- JavaScript part -->
+<script type="text/javascript">
+    
+    // Total seconds to wait
+    var seconds = 10;
+    
+    function countdown() {
+        seconds = seconds - 1;
+        if (seconds < 0) {
+            // Change your redirection link here
+            window.location = "/homepage.html";
+        } else {
+            // Update remaining seconds
+            document.getElementById("countdown").innerHTML = seconds;
+            // Count down using javascript
+            window.setTimeout("countdown()", 1000);
+        }
+    }
+    
+    // Run countdown function
+    countdown();
+    
+</script>
 
-<p><h1>
-    Click <a href="/homepage.html">here</a> if you are not redirected automatically.
-</h1></p>
+<p>
+    Click <b><a href="/homepage.html">here</a></p></b> if you are not redirected automatically.
+</p>
 
 </body>
 </html>

@@ -7,34 +7,13 @@
 </head>
 
 <body>
-    <h3>
-  Redirecting to the appropriate page in <span id="countdown">10</span> seconds
-</h3>
-<!-- JavaScript part -->
-<script type="text/javascript">
-    
-    // Total seconds to wait
-    var seconds = 10;
-    
-    function countdown() {
-        seconds = seconds - 1;
-        if (seconds < 0) {
-            // Change your redirection link here
-            window.location = "/test.html";
-        } else {
-            // Update remaining seconds
-            document.getElementById("countdown").innerHTML = seconds;
-            // Count down using javascript
-            window.setTimeout("countdown()", 1000);
-        }
-    }
-    
-    // Run countdown function
-    countdown();
-    
-</script>
 
 <p>Welcome to Astha Maternity and Nursing Home</p>
+
+<p>None of us want to lose the roads
+    So, here's a map for you ! 
+</p>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3670.906034364035!2d72.52837111477031!3d23.06390628493221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e8350cbba6355%3A0x1be24349111c0a26!2sAstha%20Maternity%20%26%20Nursing%20Home!5e0!3m2!1sen!2sin!4v1631348566601!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
 </body>
 </html>
