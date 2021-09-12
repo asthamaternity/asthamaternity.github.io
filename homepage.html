@@ -4,15 +4,63 @@
 
 <head>
 <title>Astha Maternity and Nursing Home</title>
+
+		<style>
+			table {
+				border-collapse: collapse;
+			}
+			th {
+				background-color:green;
+				Color:white;
+			}
+			th, td {
+				width:150px;
+				text-align:center;
+				border:1px solid black;
+				padding:5px
+			}
+		</style>
+
 </head>
 
 <body>
 
-<center><h2><p>Welcome to Astha Maternity and Nursing Home</p></h2></center>
+<center><h2><p><font color="red">Welcome to Astha Maternity and Nursing Home</font></p></h2></center>
 
-<p>None of us want to lose our way</p>
-<p>So, here's a map for you !</p>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3670.906034364035!2d72.52837111477031!3d23.06390628493221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e8350cbba6355%3A0x1be24349111c0a26!2sAstha%20Maternity%20%26%20Nursing%20Home!5e0!3m2!1sen!2sin!4v1631348566601!5m2!1sen!2sin" width="900" height="675" style="border:0;" allowfullscreen="false" loading="lazy"></iframe>
+<center>
+<table>
+	<tr>
+        <th><button id="button.home" class="float-left submit-button" >Homepage</button></th>
+        <th><button id="button.appointments" class="float-left submit-button" >Appointments</button></th>
+        <th><button id="button.directions" class="float-left submit-button" >Directions</button></th>
+        <th><button id="button.about-us" class="float-left submit-button" >About Us</button></th>
+	    </tr>
+</table>
+</center>
+
+<script type="text/javascript">
+    document.getElementById("button.home").onclick = function () {
+        location.href = "/homepage.html";
+    };
+</script>
+
+<script type="text/javascript">
+    document.getElementById("button.appointments").onclick = function () {
+        location.href = "/appointments/appointments.html";
+    };
+</script>
+
+<script type="text/javascript">
+    document.getElementById("button.directions").onclick = function () {
+        location.href = "/directions/directions.html";
+    };
+</script>
+
+<script type="text/javascript">
+    document.getElementById("button.about-us").onclick = function () {
+        location.href = "/about-us/about-us.html";
+    };
+</script>
 
 </body>
 </html>
